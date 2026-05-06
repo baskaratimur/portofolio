@@ -17,8 +17,8 @@ export const portfolioData = {
     },
     {
       title: "Web API Automation",
-      stack: "Web API Playwright + TypeScript",
-      url: "https://github.com/baskaratimur/APIweb"
+      stack: "Web API Playwright + TypeScript (Classic automation)",
+      url: "https://github.com/baskaratimur/automation-web-api"
     }
   ],
   skills: [
