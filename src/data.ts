@@ -9,18 +9,18 @@ export const portfolioData = {
     summary: "QA Engineer yang berorientasi pada detail dengan pengalaman luas dalam pengujian manual dan otomatis di platform web, seluler, dan API. Fokus pada peningkatan kualitas produk melalui otomasi efisien dan integrasi pipeline CI/CD.",
     photo: "baskara.jpg",
   },
-  projects: [
-    {
-      title: "Android Automation",
-      stack: "Android WebdriverIO + Appium + TypeScript (BDD)",
-      url: "https://github.com/baskaratimur/AndroidAutomation"
-    },
-    {
-      title: "Web API Automation",
-      stack: "Web API Playwright + TypeScript (Classic automation)",
-      url: "https://github.com/baskaratimur/automation-web-api"
-    }
-  ],
+  // projects: [
+  //   {
+  //     title: "Android Automation",
+  //     stack: "Android WebdriverIO + Appium + TypeScript (BDD)",
+  //     url: "https://github.com/baskaratimur/AndroidAutomation"
+  //   },
+  //   {
+  //     title: "Web API Automation",
+  //     stack: "Web API Playwright + TypeScript (Classic automation)",
+  //     url: "https://github.com/baskaratimur/automation-web-api"
+  //   }
+  // ],
   skills: [
     { category: "Programming", items: ["TypeScript", "Python", "Golang"] },
     { category: "Automation", items: ["Playwright", "WebdriverIO", "Appium", "Selenium", "Postman"] },

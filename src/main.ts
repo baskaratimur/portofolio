@@ -42,18 +42,6 @@ const renderCerts = () => {
     `).join('');
 };
 
-const renderProjects = () => {
-    return portfolioData.projects.map(project => `
-        <a href="${project.url}" target="_blank" class="block group card hover:border-primary-500 transition-all animate-fade-in-up">
-            <div class="flex justify-between items-start mb-2">
-                <h3 class="font-bold text-slate-900 group-hover:text-primary-600 transition-colors">${project.title}</h3>
-                <span class="text-slate-400 group-hover:text-primary-500 transition-colors">↗</span>
-            </div>
-            <p class="text-xs text-slate-500 font-medium">${project.stack}</p>
-        </a>
-    `).join('');
-};
-
 app.innerHTML = `
 <div class="min-h-screen">
     <!-- Navigation -->
@@ -152,16 +140,6 @@ app.innerHTML = `
             <div id="experience" class="lg:col-span-2 space-y-16 mt-4">
                 <div>
                   <h2 class="text-3xl font-black text-slate-900 mb-10 flex items-center gap-4 tracking-tighter uppercase">
-                    Automation Repositories
-                    <span class="h-1 bg-slate-100 flex-grow rounded-full"></span>
-                  </h2>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      ${renderProjects()}
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="text-3xl font-black text-slate-900 mb-12 flex items-center gap-4 tracking-tighter uppercase">
                     Professional Experience
                     <span class="h-1 bg-slate-100 flex-grow rounded-full"></span>
                   </h2>
