@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ] # Ganti ke 'main' jika branch utama Anda main
+    branches: [ master ]
 
 permissions:
   contents: read
@@ -27,7 +27,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist/' # Vite mengeluarkan hasil build ke folder dist
+          path: 'dist/'
 
   deploy:
     needs: build_site
