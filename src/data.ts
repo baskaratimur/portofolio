@@ -7,7 +7,7 @@ export const portfolioData = {
     email: "baskaratimur2@gmail.com",
     linkedin: "https://www.linkedin.com/in/baskara-timur-71a979173/",
     summary: "QA Engineer yang berorientasi pada detail dengan pengalaman luas dalam pengujian manual dan otomatis di platform web, seluler, dan API. Fokus pada peningkatan kualitas produk melalui otomasi efisien dan integrasi pipeline CI/CD.",
-    photo: "src/baskara.jpg",
+    photo: "/baskara.jpg",
   },
   projects: [
     {
