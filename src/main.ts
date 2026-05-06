@@ -88,7 +88,7 @@ app.innerHTML = `
                 </p>
                 <div class="flex gap-4 pt-4">
                     <a href="#experience" class="btn-primary flex items-center gap-2">View Experience</a>
-                    <a href="mailto:${portfolioData.profile.email}" class="px-6 py-2 rounded-lg border-2 border-slate-200 font-semibold text-slate-600 hover:border-primary-500 hover:text-primary-600 transition-all">Contact Me</a>
+                    <a href="#contact" class="px-6 py-2 rounded-lg border-2 border-slate-200 font-semibold text-slate-600 hover:border-primary-500 hover:text-primary-600 transition-all">Contact Me</a>
                 </div>
             </div>
             <div class="relative order-1 lg:order-2 flex justify-center animate-fade-in">
@@ -115,7 +115,7 @@ app.innerHTML = `
                 </div>
 
                 <!-- Contact Info Card -->
-                <div class="card bg-slate-900 text-white shadow-xl">
+                <div id="contact" class="card bg-slate-900 text-white shadow-xl">
                     <h2 class="text-xl font-bold mb-6 text-primary-400 tracking-tighter">LET'S CONNECT</h2>
                     <ul class="space-y-4">
                         <li class="flex items-center gap-4 group cursor-pointer">
