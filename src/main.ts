@@ -26,12 +26,27 @@ const renderExp = () => {
                 <span class="text-primary-600 font-semibold uppercase tracking-wider text-sm">${exp.company}</span>
                 <span class="text-slate-400 font-medium text-xs">• ${exp.period}</span>
             </div>
-            <ul class="space-y-2">
-                ${exp.description.map(item => `<li class="text-slate-600 text-sm flex items-start">
-                    <span class="text-primary-500 mr-2">▹</span>
-                    <span>${item}</span>
-                </li>`).join('')}
-            </ul>
+            <div class="space-y-4">
+                ${exp.description.map(item => {
+                    if (typeof item === 'string') {
+                        return `<div class="text-slate-600 text-sm flex items-start">
+                            <span class="text-primary-500 mr-2 mt-0.5">▹</span>
+                            <span>${item}</span>
+                        </div>`;
+                    } else {
+                        return `<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                            <h4 class="font-bold text-slate-800 text-sm mb-1">${item.title}</h4>
+                            <p class="text-slate-600 text-sm mb-3">${item.description}</p>
+                            <ul class="space-y-2">
+                                ${item.points.map(pt => `<li class="text-slate-600 text-sm flex items-start">
+                                    <span class="text-primary-500 mr-2 mt-0.5">-</span>
+                                    <span>${pt}</span>
+                                </li>`).join('')}
+                            </ul>
+                        </div>`;
+                    }
+                }).join('')}
+            </div>
         </div>
     `).join('');
 };
