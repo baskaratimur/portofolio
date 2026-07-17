@@ -89,7 +89,7 @@ export const portfolioData: PortfolioData = {
         },
         {
           title: "4. Manual & Field QA Testing",
-          description: "Responsible for end-to-end manual testing, covering everything from system validation to real-world user experience in the field:",
+          description: "Analyze the feature and creating the testcase with AI and Responsible for end-to-end manual testing, covering everything from system validation to real-world user experience in the field:",
           points: [
             "Web, Mobile, IoT & API Testing: Conducted functional testing on applications and validated backend data integration through manual API testing.",
             "Product UAT & User Training: Collaborated with the Product Team to execute User Acceptance Testing (UAT) and led direct application training for caretakers (end-users) to gather actionable field feedback."
