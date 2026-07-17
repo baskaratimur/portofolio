@@ -1,5 +1,8 @@
 import { portfolioData } from './data';
 import './style.css';
+import fieldImg1 from './lapangan 1.jpeg';
+import fieldVid2 from './lapangan 2.mp4';
+import fieldImg3 from './lapangan 3.jpeg';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
@@ -52,6 +55,7 @@ app.innerHTML = `
                 <a href="#about" class="hover:text-primary-600 transition-colors uppercase">About</a>
                 <a href="#experience" class="hover:text-primary-600 transition-colors uppercase">Experience</a>
                 <a href="#skills" class="hover:text-primary-600 transition-colors uppercase">Skills</a>
+                <a href="#gallery" class="hover:text-primary-600 transition-colors uppercase">Gallery</a>
                 <a href="#contact" class="hover:text-primary-600 transition-colors uppercase">Contact</a>
             </div>
         </div>
@@ -169,5 +173,24 @@ app.innerHTML = `
             </div>
         </div>
     </main>
+
+    <!-- Field Documentation Gallery -->
+    <section id="gallery" class="max-w-6xl mx-auto pb-20 px-6">
+        <h2 class="text-3xl font-black text-slate-900 mb-10 flex items-center gap-4 tracking-tighter uppercase">
+            Field Documentation
+            <span class="h-1 bg-slate-100 flex-grow rounded-full"></span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-2 bg-white rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
+                <img src="${fieldImg1}" alt="Field Activity 1" class="w-full h-64 object-cover rounded-2xl" />
+            </div>
+            <div class="p-2 bg-white rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
+                <video src="${fieldVid2}" controls class="w-full h-64 object-cover rounded-2xl"></video>
+            </div>
+            <div class="p-2 bg-white rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
+                <img src="${fieldImg3}" alt="Field Activity 3" class="w-full h-64 object-cover rounded-2xl" />
+            </div>
+        </div>
+    </section>
 </div>
 `;

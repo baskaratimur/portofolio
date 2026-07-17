@@ -2,11 +2,11 @@ export const portfolioData = {
   profile: {
     fullName: "BASKARA TIMUR",
     title: "QA Engineer & Test Automation Specialist",
-    location: "Depok, Jawa Barat",
+    location: "Depok, West Java",
     phone: "08997775838",
     email: "baskaratimur2@gmail.com",
     linkedin: "https://www.linkedin.com/in/baskara-timur-71a979173/",
-    summary: "QA Engineer yang berorientasi pada detail dengan pengalaman luas dalam pengujian manual dan otomatis di platform web, seluler, dan API. Fokus pada peningkatan kualitas produk melalui otomasi efisien dan integrasi pipeline CI/CD.",
+    summary: "Detail-oriented QA Engineer with extensive experience in manual and automated testing across web, mobile, and API platforms. Focused on improving product quality through efficient automation and CI/CD pipeline integration.",
     photo: "baskara.jpg",
   },
   // projects: [
@@ -31,19 +31,19 @@ export const portfolioData = {
     {
       company: "Jejakin",
       role: "QA Engineer",
-      period: "Juli 2024 - Sekarang",
+      period: "July 2024 - Present",
       description: [
-        "Web Automation (CarbonIQ): Architected a scalable framework using Playwright & TypeScript with an Atomic/Modular Testing strategy for activity logging and calculation engines.",
-        "API Automation & Observability (Atlas): Developed E2E User Journey frameworks for the MRV ecosystem with Bitbucket scheduler and MS Teams webhook integration.",
-        "Mobile Automation (Atlas): Developed atomic/modular testing using WebdriverIO and Appium with TypeScript and Behavior Driven Development (BDD).",
-        "Manual QA (Atlas): Collaborated to isolate and reproduce complex bugs, improving the reliability of the mobile and API ecosystem.",
-        "Data Engineering: Conducted on-call executions to fix data issues using Python and Pandas."
+        "1. Web Automation – Product : CarbonIQ\nArchitected a scalable automation framework using Playwright & TypeScript with an Atomic/Modular Testing strategy.\n- Core Responsibilities: Validating complex functionalities including Activity logging, Calculation engines, and Emission monitoring.",
+        "2. API Automation & Observability Engineer – Product: Atlas\nDeveloped a End-to-End User Journey testing framework using Playwright, focusing on the MRV (Measurement, Reporting, and Verification) ecosystem\n- Domain Expertise: Comprehensive validation of the Atlas MRV pipeline with Bitbucket scheduler, covering Biodiversity, CSA, Geotagging, Tracking, Ground-truth, Soil-survey, and Trenches.\n- Monitoring Ecosystem: * Automated Alerting: Integrated real-time MS Teams webhooks for instant failure notification.\n- Data-Driven Documentation: Each result running from pipeline will be delivered to database for documentation reporting.",
+        "3. Mobile Automation Engineer – Product: Atlas\nDeveloped modular testing using WebdriverIO and appium with typescript.\n- Behavior Driven Development (BDD): Implemented Gherkin-based scenarios to ensure technical tests align perfectly with business requirements.",
+        "4. Manual & Field QA Testing \nResponsible for end-to-end manual testing, covering everything from system validation to real-world user experience in the field:\nWeb, Mobile, IoT & API Testing: Conducted functional testing on applications and validated backend data integration through manual API testing.\nProduct UAT & User Training: Collaborated with the Product Team to execute User Acceptance Testing (UAT) and led direct application training for caretakers (end-users) to gather actionable field feedback.",
+        "5. Data Engineering\n- On-call executions : helped other team to fix their problem with the data using python and pandas."
       ]
     },
     {
       company: "MNC Innovation Center",
       role: "QA Engineer",
-      period: "Januari 2023 - Juni 2024",
+      period: "January 2023 - June 2024",
       description: [
         "Manual Testing: Created test cases and collaborated across Native Mobile Apps, Web, and API platforms for cross-platform compatibility.",
         "Performance Engineering: Executed high-scale performance and load tests using k6 and JMeter to identify system bottlenecks.",
@@ -53,22 +53,22 @@ export const portfolioData = {
     },
     {
       company: "Tokopedia",
-      role: "QA Tester Manual",
-      period: "September 2021 - Desember 2022",
+      role: "Manual QA Tester",
+      period: "September 2021 - December 2022",
       description: [
-        "Analisis flow fitur Rewards dan penyusunan test case di Xray.",
-        "Persiapan data testing kompleks (Campaign, Coupon, User Account).",
-        "Pelaporan dan monitoring bug melalui Jira."
+        "Analyzed Rewards feature flow and compiled test cases in Xray.",
+        "Prepared complex testing data (Campaign, Coupon, User Account).",
+        "Reported and monitored bugs using Jira."
       ]
     }
   ],
   education: {
-    degree: "Sarjana Sistem Informasi",
-    institution: "Universitas Trilogi",
+    degree: "Bachelor of Information Systems",
+    institution: "Trilogi University",
   },
   certifications: [
     {
-      name: "Data Engineer Pemula",
+      name: "Junior Data Engineer",
       description: "Python for ETL/ELT projects."
     }
   ]
