@@ -51,6 +51,23 @@ const renderExp = () => {
     `).join('');
 };
 
+const renderProjects = () => {
+    if (!portfolioData.projects || portfolioData.projects.length === 0) return '';
+    return portfolioData.projects.map(project => `
+        <a href="${project.url}" target="_blank" rel="noopener noreferrer" class="block group card hover:border-primary-500 transition-all animate-fade-in-up">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-slate-900 group-hover:text-primary-600 transition-colors">${project.title}</h3>
+                <span class="text-slate-400 group-hover:text-primary-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium mb-3">${project.stack}</p>
+            <div class="inline-flex items-center gap-1 text-xs font-semibold text-primary-600 group-hover:gap-2 transition-all">
+                <span>View Repository</span>
+                <span>→</span>
+            </div>
+        </a>
+    `).join('');
+};
+
 const renderCerts = () => {
     return portfolioData.certifications.map(cert => `
         <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-primary-200 transition-all hover:bg-white animate-fade-in-up">
@@ -68,6 +85,7 @@ app.innerHTML = `
             <div class="text-2xl font-black gradient-text">BT.</div>
             <div class="space-x-8 text-slate-500">
                 <a href="#about" class="hover:text-primary-600 transition-colors uppercase">About</a>
+                <a href="#projects" class="hover:text-primary-600 transition-colors uppercase">Projects</a>
                 <a href="#experience" class="hover:text-primary-600 transition-colors uppercase">Experience</a>
                 <a href="#skills" class="hover:text-primary-600 transition-colors uppercase">Skills</a>
                 <a href="#gallery" class="hover:text-primary-600 transition-colors uppercase">Gallery</a>
@@ -156,8 +174,20 @@ app.innerHTML = `
             </div>
 
             <!-- Right Column: Projects, Experience & Education -->
-            <div id="experience" class="lg:col-span-2 space-y-16 mt-4">
-                <div>
+            <div class="lg:col-span-2 space-y-16 mt-4">
+                ${portfolioData.projects && portfolioData.projects.length > 0 ? `
+                <div id="projects">
+                  <h2 class="text-3xl font-black text-slate-900 mb-10 flex items-center gap-4 tracking-tighter uppercase">
+                    Automation Repositories
+                    <span class="h-1 bg-slate-100 flex-grow rounded-full"></span>
+                  </h2>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      ${renderProjects()}
+                  </div>
+                </div>
+                ` : ''}
+
+                <div id="experience">
                   <h2 class="text-3xl font-black text-slate-900 mb-10 flex items-center gap-4 tracking-tighter uppercase">
                     Professional Experience
                     <span class="h-1 bg-slate-100 flex-grow rounded-full"></span>

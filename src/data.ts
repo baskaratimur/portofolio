@@ -11,6 +11,12 @@ export interface Experience {
   description: ExperienceDesc[];
 }
 
+export interface Project {
+  title: string;
+  stack: string;
+  url: string;
+}
+
 export interface PortfolioData {
   profile: {
     fullName: string;
@@ -22,6 +28,7 @@ export interface PortfolioData {
     summary: string;
     photo: string;
   };
+  projects?: Project[];
   skills: { category: string; items: string[] }[];
   experience: Experience[];
   education: { degree: string; institution: string };
@@ -39,18 +46,18 @@ export const portfolioData: PortfolioData = {
     summary: "Detail-oriented QA Engineer with extensive experience in manual and automated testing across web, mobile, Sensor IOT and API platforms. Focused on improving product quality through efficient automation and CI/CD pipeline integration.",
     photo: "baskara.jpg",
   },
-  // projects: [
-  //   {
-  //     title: "Android Automation",
-  //     stack: "Android WebdriverIO + Appium + TypeScript (BDD)",
-  //     url: "https://github.com/baskaratimur/AndroidAutomation"
-  //   },
-  //   {
-  //     title: "Web API Automation",
-  //     stack: "Web API Playwright + TypeScript (Classic automation)",
-  //     url: "https://github.com/baskaratimur/automation-web-api"
-  //   }
-  // ],
+  projects: [
+    {
+      title: "Automation API & Website",
+      stack: "Playwright + TypeScript",
+      url: "https://github.com/baskaratimur/portofolio-automation"
+    },
+    // {
+    //   title: "Web API Automation",
+    //   stack: "Web API Playwright + TypeScript (Classic automation)",
+    //   url: "https://github.com/baskaratimur/automation-web-api"
+    // }
+  ],
   skills: [
     { category: "Programming", items: ["TypeScript", "Python", "Golang"] },
     { category: "Automation", items: ["Playwright", "WebdriverIO", "Appium", "Selenium", "Postman"] },
